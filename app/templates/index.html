@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% import "macros.html" as macro %}
+
+{% block content %}
+
+
+<div class="container">
+
+    <h1 class="text-center text-primary mt-3">General</h1>
+    <div class="row">
+        {{ macro.displayNewsList(general_news_sources)}}
+    </div>
+
+    <h1 class="text-center text-primary mt-3">Business News</h1>
+    <div class="row">
+        {{ macro.displayNewsList(business_news_sources)}}
+    </div>
+
+    <h1 class="text-center text-primary mt-3">Entertainment</h1>
+    <div class="row">
+        {{ macro.displayNewsList(entertainment_news_sources)}}
+    </div>
+
+    <h1 class="text-center text-primary mt-3">Sports</h1>
+    <div class="row">
+        {{ macro.displayNewsList(sports_news_sources)}}
+    </div>
+</div>
+{% endblock %}
